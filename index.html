@@ -2,69 +2,121 @@
 
 <html>
   <head>
-    <title>Sample Web Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>My Web Page</title>
     <style>
-      .flex-container {
-        display: flex;
-        border-style: solid;
-        border-width: 5px;
-        border-color: red;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+      body {
+        margin: 0;
+        font-family: "Roboto";
+        font-size: 22px;
+        color: #b3b3b3;
       }
-
-      .flex-item {
+      .navbar {
+      }
+      .photo {
+        text-align: center;
+      }
+      .prevprod {
+        text-align: center;
+      }
+      .projects {
+        display: flex;
+        text-align: center;
+      }
+      .proj {
+        padding: 14px 16px;
         border-style: solid;
-        border-width: 2px;
-        border-color: red;
+        border-radius: 10px;
+        flex-direction: row;
+        align-self: center;
+      }
+      .sa {
+        display: flex;
+        text-align: center;
+      }
+      .skills {
+        text-align: center;
+      }
+      .skill1 {
+        text-align: left;
+      }
+      .footer {
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: #141414;
+      }
+      .navbar a {
+        float: left;
+        color: #a5a5a5;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .navbar a:hover {
+        background-color: #cccccc;
+        color: #141414;
       }
     </style>
   </head>
 
-  <body>
-    <div class="flex-container">
-      <div class="flex-item" style="flex: 3">1</div>
-      <div class="flex-item" style="flex: 3">2</div>
-      <div class="flex-item" style="flex: 3">3</div>
-      <div class="flex-item" style="flex: 3">4</div>
-      <div class="flex-item" style="flex: 3">5</div>
+  <body style="background-color: #363636">
+    <div class="navbar">
+      <a href="#developer">Developer</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#autobiography">Autobiography</a>
     </div>
-    <h1>This is a heading</h1>
-    <p>This is the first paragraph of text</p>
     <hr />
-    <p>This is the second paragraph of text</p>
-    <div class="flex-container">
-      <div class="flex-item" style="flex: 3">
-        <h1>1</h1>
-        <p>This is a paragraph</p>
+    <div class="photo">
+      <h3>Featured Photo</h3>
+      <img width="300" src="ryan.jpg" />
+    </div>
+    <div class="prevprod">
+      <h3>Previous Projects</h3>
+    </div>
+    <div class="projects">
+      <div class="proj" style="flex: 3">Jap<->Eng Quiz</div>
+      <div class="proj" style="flex: 3">Pokemon Top-Down Shooter</div>
+      <div class="proj" style="flex: 3">3</div>
+      <div class="proj" style="flex: 3">4</div>
+    </div>
+    <div class="sa">
+      <div class="skills" style="flex: 3">
+        <h3>Skills</h3>
+        <div class="skill">
+          <div class="skill1">1. Good communicator</div>
+          <div class="skill1">2. Easily motivated</div>
+          <div class="skill1">3. HTML and CSS Skills</div>
+        </div>
       </div>
-      <div class="flex-item" style="flex: 3">
-        <h1>2</h1>
-        <p>This is another paragraph</p>
-      </div>
-      <div class="flex-item" style="flex: 2">
-        <h1>3</h1>
-        <p>This is another paragraph</p>
-        <p>This is another paragraph</p>
-      </div>
-      <div class="flex-item" style="flex: 4">
-        <h1>4</h1>
-        <p>This is another paragraph</p>
-      </div>
-      <div class="flex-item" style="flex: 3">
-        <h1>5</h1>
-        <p>This is another paragraph</p>
-        <p>This is another paragraph</p>
-        <p>This is another paragraph</p>
-        <p>This is another paragraph</p>
-        <p>This is another paragraph</p>
-      </div>
-      <div class="flex-item" style="flex: 1">
-        <h1>6</h1>
-        <p>This is another paragraph</p>
+      <div class="auto" style="flex: 3">
+        <h3>Autobiography</h3>
+        <div class="autob">1</div>
       </div>
     </div>
+    <hr />
+    <footer>
+      <div class="footer">
+        <div class="footphoto" style="flex: 0.3">
+          <img src="r.png" width="83" />
+        </div>
+        <div class="footcont" style="flex: 3">
+          <p>
+            Address: Lucena City, Quezon Province
+            <br />Contact number: 09XXXXXXXXX <br />Email: rdadormeo@up.edu.ph
+            <br />Copyright Information
+          </p>
+          <a href="#top">Back to the Top</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
