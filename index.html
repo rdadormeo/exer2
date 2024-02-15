@@ -3,12 +3,68 @@
 <html>
   <head>
     <title>Sample Web Page</title>
+    <style>
+      .flex-container {
+        display: flex;
+        border-style: solid;
+        border-width: 5px;
+        border-color: red;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .flex-item {
+        border-style: solid;
+        border-width: 2px;
+        border-color: red;
+      }
+    </style>
   </head>
 
   <body>
+    <div class="flex-container">
+      <div class="flex-item" style="flex: 3">1</div>
+      <div class="flex-item" style="flex: 3">2</div>
+      <div class="flex-item" style="flex: 3">3</div>
+      <div class="flex-item" style="flex: 3">4</div>
+      <div class="flex-item" style="flex: 3">5</div>
+    </div>
     <h1>This is a heading</h1>
     <p>This is the first paragraph of text</p>
     <hr />
     <p>This is the second paragraph of text</p>
+    <div class="flex-container">
+      <div class="flex-item" style="flex: 3">
+        <h1>1</h1>
+        <p>This is a paragraph</p>
+      </div>
+      <div class="flex-item" style="flex: 3">
+        <h1>2</h1>
+        <p>This is another paragraph</p>
+      </div>
+      <div class="flex-item" style="flex: 2">
+        <h1>3</h1>
+        <p>This is another paragraph</p>
+        <p>This is another paragraph</p>
+      </div>
+      <div class="flex-item" style="flex: 4">
+        <h1>4</h1>
+        <p>This is another paragraph</p>
+      </div>
+      <div class="flex-item" style="flex: 3">
+        <h1>5</h1>
+        <p>This is another paragraph</p>
+        <p>This is another paragraph</p>
+        <p>This is another paragraph</p>
+        <p>This is another paragraph</p>
+        <p>This is another paragraph</p>
+      </div>
+      <div class="flex-item" style="flex: 1">
+        <h1>6</h1>
+        <p>This is another paragraph</p>
+      </div>
+    </div>
   </body>
 </html>
